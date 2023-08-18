@@ -3,7 +3,7 @@ import React from 'react'
 const Signin = () => {
     return (
         <div className='flex flex-col lg:flex-row overflow-hidden bg-white'>
-          <div className='hidden lg:flex flex-col h-screen bg-blue-600 w-[85%]'>
+          <div className='hidden lg:flex flex-col h-screen bg-blue-600 w-[45%]'>
             <div className='m-7 text-white font-medium text-[20px]'>Webminds</div>
             <div className='m-8 my-auto'>
               <h1 className='text-white text-[40px] leading-[60px] font-semibold'>Course past questions at your fingertips.</h1>
