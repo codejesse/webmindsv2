@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Root = () => {
     return (
-        <main className="flex flex-row bg-[#F7FAFC] overflow-hidden h-fit lg:h-screen">
+        <main className="flex flex-row bg-[#F7FAFC] overflow-hidden h-full lg:h-screen">
             <Sidenav />
             <div className='flex flex-col p-7 lg:ml-24 w-full'>
                 {/* Nav containing searchbar */}
@@ -63,9 +63,14 @@ const Root = () => {
                         <div className='bg-white w-full md:w-full lg:w-full h-fit mt-8 rounded-3xl lg:rounded-xl p-4'>
                             <h1 className='text-[25px] lg:text-[30px] font-medium'>📚 Past Questions "All"</h1>
                             <div className='flex flex-col gap-5 p-16'>
-                                <img className='mx-auto mt-10' width={30} height={30} alt='logo' src="/icon.svg" />
-                                <h1 className='text-[#7A7A7A] text-center'>Nothing here to show</h1>
+                                {/* <img className='mx-auto mt-10' width={30} height={30} alt='logo' src="/icon.svg" />
+                                <h1 className='text-[#7A7A7A] text-center'>Nothing here to show</h1> */}
                                 <h1><Link to="/upload" >Upload first file</Link></h1>
+                                <div className='grid grid-cols-1 lg:grid-cols-3'>
+                                    <div className='border border-blue-500 h-[297px]'> PDF 1</div>
+                                    <div className='border border-blue-500 h-[297px]'> PDF 1</div>
+                                    <div className='border border-blue-500 h-[297px]'> PDF 1</div>
+                                </div>
                             </div>
                         </div>
                     </div>
