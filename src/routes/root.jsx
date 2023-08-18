@@ -1,8 +1,25 @@
 import React from 'react'
 import Sidenav from '../components/Sidenav'
 import { Link } from 'react-router-dom'
+import { Document, Page } from 'react-pdf';
+import { useState } from 'react';
 
 const Root = () => {
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
+
+    const onDocumentLoadSuccess = ({ numPages }) => {
+        setNumPages(numPages);
+    };
+
+    const goToPrevPage = () =>
+        setPageNumber(pageNumber - 1 <= 1 ? 1 : pageNumber - 1);
+
+    const goToNextPage = () =>
+        setPageNumber(
+            pageNumber + 1 >= numPages ? numPages : pageNumber + 1,
+        );
+
     return (
         <main className="flex flex-row bg-[#F7FAFC] overflow-hidden h-full lg:h-screen">
             <Sidenav />
