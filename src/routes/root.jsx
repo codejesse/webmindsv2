@@ -3,6 +3,7 @@ import Sidenav from '../components/Sidenav'
 import { Link } from 'react-router-dom'
 import { Document, Page } from 'react-pdf';
 import { useState } from 'react';
+import pdf1 from "../assets/pdf1.pdf"
 
 const Root = () => {
     const [numPages, setNumPages] = useState(null);
@@ -21,7 +22,7 @@ const Root = () => {
         );
 
     return (
-        <main className="flex flex-row bg-[#F7FAFC] overflow-hidden h-full lg:h-screen">
+        <main className="flex flex-row bg-[#F7FAFC] overflow-hidden h-full lg:h-full">
             <Sidenav />
             <div className='flex flex-col p-7 lg:ml-24 w-full'>
                 {/* Nav containing searchbar */}
@@ -77,16 +78,22 @@ const Root = () => {
                             </div>
                         </div>
                         {/* Past question cards container */}
-                        <div className='bg-white w-full md:w-full lg:w-full h-screen mt-8 rounded-3xl lg:rounded-xl p-4'>
+                        <div className='bg-white w-full md:w-full lg:w-full h-fit lg:h-fit mt-8 rounded-3xl lg:rounded-xl p-4'>
                             <h1 className='text-[25px] lg:text-[30px] font-medium'>📚 Past Questions "All"</h1>
-                            <div className='flex flex-col gap-5 p-16'>
+                            <div className='flex flex-col gap-5 p-4'>
                                 {/* <img className='mx-auto mt-10' width={30} height={30} alt='logo' src="/icon.svg" />
                                 <h1 className='text-[#7A7A7A] text-center'>Nothing here to show</h1> */}
-                                <h1><Link to="/upload" >Upload first file</Link></h1>
-                                <div className='grid grid-cols-1 lg:grid-cols-3'>
-                                    <div className='border border-blue-500 h-[297px]'> PDF 1</div>
-                                    <div className='border border-blue-500 h-[297px]'> PDF 1</div>
-                                    <div className='border border-blue-500 h-[297px]'> PDF 1</div>
+                                {/* <h1><Link to="/upload" >Upload first file</Link></h1> */}
+                                <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
+                                    <div className='border border-blue-500 h-[297px] rounded-xl'>
+                                    <iframe src="https://drive.google.com/file/d/1G0ek3z8yf8kZLhmXYGdAmb20ZeXM7ZTK/preview" className='rounded-xl object-contain w-full' width="270" height="307" allow="autoplay"></iframe>
+                                    </div>
+                                    <div className='border border-blue-500 h-[297px] rounded-xl'>
+                                    <iframe src="https://drive.google.com/file/d/1BF7ELj733LcTqz38QCL9E7FTdBucXpsE/preview" className='rounded-xl object-contain w-full'  width="270" height="307" allow="autoplay"></iframe>
+                                    </div>
+                                    <div className='border border-blue-500 h-[297px] rounded-xl'>
+                                    <iframe src="https://drive.google.com/file/d/164jKyGaGf0s2EQtyz03N-eCRdCHhHRmQ/preview"  className='rounded-xl object-contain w-full'  width="270" height="307" allow="autoplay"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +104,7 @@ const Root = () => {
                             <h2 className='font-semibold my-auto ml-[-10px] text-white text-[15px]'>Click to join our newsletter</h2>
                         </div>
                         {/* News feed */}
-                        <div className='bg-white h-fit mt-7 rounded-xl p-4'>
+                        <div className='bg-white h-full mt-7 rounded-xl p-4'>
                             <h1>Latest news</h1>
                             <div className='flex flex-col m-14 pt-14 pb-8'>
                                 <img className='mx-auto mb-4' width={20} height={20} alt='article' src="/article_icon.svg" />
