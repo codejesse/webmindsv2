@@ -86,13 +86,19 @@ const Root = () => {
                                 {/* <h1><Link to="/upload" >Upload first file</Link></h1> */}
                                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
                                     <div className='border border-blue-500 h-[297px] rounded-xl'>
-                                    <iframe src="https://drive.google.com/file/d/1G0ek3z8yf8kZLhmXYGdAmb20ZeXM7ZTK/preview" className='rounded-xl object-contain w-full' width="270" height="307" allow="autoplay"></iframe>
+                                    <iframe src="https://drive.google.com/file/d/1G0ek3z8yf8kZLhmXYGdAmb20ZeXM7ZTK/preview" className='rounded-xl object-contain w-full h-full' width="270" height="357" allow="autoplay"></iframe>
                                     </div>
                                     <div className='border border-blue-500 h-[297px] rounded-xl'>
-                                    <iframe src="https://drive.google.com/file/d/1BF7ELj733LcTqz38QCL9E7FTdBucXpsE/preview" className='rounded-xl object-contain w-full'  width="270" height="307" allow="autoplay"></iframe>
+                                    <iframe src="https://drive.google.com/file/d/1BF7ELj733LcTqz38QCL9E7FTdBucXpsE/preview" className='rounded-xl object-contain w-full h-full'  width="270" height="357" allow="autoplay"></iframe>
                                     </div>
                                     <div className='border border-blue-500 h-[297px] rounded-xl'>
-                                    <iframe src="https://drive.google.com/file/d/164jKyGaGf0s2EQtyz03N-eCRdCHhHRmQ/preview"  className='rounded-xl object-contain w-full'  width="270" height="307" allow="autoplay"></iframe>
+                                    <iframe src="https://drive.google.com/file/d/1BF7ELj733LcTqz38QCL9E7FTdBucXpsE/preview" className='rounded-xl object-contain w-full h-full'  width="270" height="357" allow="autoplay"></iframe>
+                                    </div>
+                                    <div className='border border-blue-500 h-[297px] rounded-xl'>
+                                    <iframe src="https://drive.google.com/file/d/1BF7ELj733LcTqz38QCL9E7FTdBucXpsE/preview" className='rounded-xl object-contain w-full h-full'  width="270" height="357" allow="autoplay"></iframe>
+                                    </div>
+                                    <div className='border border-blue-500 h-[297px] rounded-xl'>
+                                    <iframe src="https://drive.google.com/file/d/164jKyGaGf0s2EQtyz03N-eCRdCHhHRmQ/preview"  className='rounded-xl object-contain w-full h-full'  width="270" height="357" allow="autoplay"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -136,8 +142,8 @@ const Root = () => {
                         {/* <svg className="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M11.074 4 8.442.408A.95.95 0 0 0 7.014.254L2.926 4h8.148ZM9 13v-1a4 4 0 0 1 4-4h6V6a1 1 0 0 0-1-1H1a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h17a1 1 0 0 0 1-1v-2h-6a4 4 0 0 1-4-4Z" />
                             <path d="M19 10h-6a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1Zm-4.5 3.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM12.62 4h2.78L12.539.41a1.086 1.086 0 1 0-1.7 1.352L12.62 4Z" />
-                        </svg> */}
-                        <Link to="/tutorials"><img src='/learning.svg' /></Link>
+                        </svg> */} 
+                        <Link to="/tutorials"><img height={50} width={30} src='/learning.svg' /></Link>
                         <span className="sr-only">Wallet</span>
                     </button>
                     <div id="tooltip-wallet" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">

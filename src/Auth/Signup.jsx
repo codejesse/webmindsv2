@@ -38,7 +38,7 @@ const Signup = () => {
                 <div className='m-7 text-white font-medium text-[20px]'>Webminds</div>
                 <div className='m-8 my-auto'>
                     <h1 className='text-white text-[40px] leading-[60px] font-semibold'>Course past questions at your fingertips.</h1>
-                    <p className='text-white w-96 font-light text-[15px] mt-6'>Powerful, self-serve product and growth analytics to help you flip homes and resell to the market.</p>
+                    <p className='text-white w-96 font-light text-[15px] mt-6'>Powerful, self-serve product and tutorial resources to help you study effectively and excel in school.</p>
                 </div>
                 <img className='' width={477} height={237} alt='Auth image' src="/Auth.png" />
             </div>
