@@ -77,7 +77,7 @@ const Root = () => {
                             </div>
                         </div>
                         {/* Past question cards container */}
-                        <div className='bg-white w-full md:w-full lg:w-full h-fit mt-8 rounded-3xl lg:rounded-xl p-4'>
+                        <div className='bg-white w-full md:w-full lg:w-full h-screen mt-8 rounded-3xl lg:rounded-xl p-4'>
                             <h1 className='text-[25px] lg:text-[30px] font-medium'>📚 Past Questions "All"</h1>
                             <div className='flex flex-col gap-5 p-16'>
                                 {/* <img className='mx-auto mt-10' width={30} height={30} alt='logo' src="/icon.svg" />
