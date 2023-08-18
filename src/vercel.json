@@ -1,8 +1,12 @@
 {
-    "routes": [
-      { "src": "/", "dest": "/signin" },
-      { "src": "/signup", "dest": "/signup" },
-      { "src": "/dashboard", "dest": "/dashboard" },
-      { "src": "/tutorials", "dest": "/tutorials" }
+    "rewrites": [
+      {
+        "source": "/:path((?!api/).*)",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/:path(api/.*)",
+        "destination": "/api"
+      }
     ]
   }
